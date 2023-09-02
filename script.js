@@ -28,7 +28,7 @@ data.data?.forEach((videos) => {
     console.log(videos);
     const div = document.createElement("div");
 div.innerHTML = `
-<div class="card w-96 bg-base-100 shadow-xl">
+<div class="card w-64 bg-base-100 shadow-xl">
             <figure>
                 <img src="${videos?.thumbnail}">
             </figure>

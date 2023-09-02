@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- daisyUI added -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>blog page </title>
 </head>
-<body>
-    <h1>Blog</h1>
-    <h2> Q & A</h2>
-    <h3> Question-1: Discuss the scope of var, let, and const</h3>
+<body class="ml-4 mt-8">
+    <h1 class="text-center text-6xl">Blog</h1>
+    <h2 class="text-4xl"> Q & A</h2>
+    <h3> <strong>Question-1:</strong> Discuss the scope of var, let, and const</h3>
     <p>
         <strong>Answer:</strong>  var declarations are globally scoped or function scoped while let and const are block scoped.
         <br>
@@ -19,7 +22,7 @@
         While var and let can be declared without being initialized, const must be initialized during declaration.
     </p> 
 
-    <h3> Question-2: Tell us the use cases of null and undefined</h3>
+    <h3> <strong>Question-2:</strong> Tell us the use cases of null and undefined</h3>
     <p>
         <strong>Answer:</strong>  Undefined means the variable has been declared, but its value has not been assigned.
         <br>
@@ -29,14 +32,15 @@
     </p> 
 
 
-    <h3> Question-3: What do you mean by REST API?</h3>
+    <h3> <strong>Question-3:</strong> What do you mean by REST API?</h3>
     <p>
         <strong>Answer:</strong>  An API, or application programming interface, is a set of rules that define how applications or devices can connect to and communicate with each other. A REST API is an API that conforms to the design principles of the REST, or representational state transfer architectural style. For this reason, REST APIs are sometimes referred to RESTful APIs.
         <br>
         First defined in 2000 by computer scientist Dr. Roy Fielding in his doctoral dissertation, REST provides a relatively high level of flexibility and freedom for developers. This flexibility is just one reason why REST APIs have emerged as a common method for connecting components and applications in a microservices architecture.
     </p> 
 
-    <button id="goBackButton" class="btn btn-primary">Go Back</button>
+    <button id="goBackButton" class="btn btn-secondary">Go Back</button>
+    
 
     <script>
         let backButton = document.getElementById("goBackButton");
