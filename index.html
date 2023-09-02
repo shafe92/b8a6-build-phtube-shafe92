@@ -1,11 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- daisyUI added -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <!-- link to css -->
+    <link rel="stylesheet" href="style.css">
     <title>Phero tube shafe</title>
 </head>
+
 <body>
-    <h1>hello world</h1>
+
+    <nav class="navbar-section flex justify-around mt-4">
+        <img src="images/Logo.png" alt="">
+        <button class="btn">Sort by view</button>
+        <button id="navigateButton" class="btn btn-secondary">Blog</button>
+    </nav>
+
+    <div class="tab-container w-full">
+        <div class="tabs tabs p-5 w-96 m-auto text-center flex justify-center" id="tab-container">
+            <!-- <a class="tab">Tab 1</a> 
+            <a class="tab">Tab 2</a> 
+            <a class="tab">Tab 3</a> -->
+        </div>
+    </div>
+
+    <!-- card section  -->
+    <div id="card-container" class="grid grid-cols-4 gap-12">
+        <!-- <div class="card w-96 bg-base-100 shadow-xl">
+            <figure>
+                <img src="images/Icon.png" alt="">
+            </figure>
+            <div class="card-body">
+                <div>
+                    <div class="avatar-online flex gap-2">
+                        <div class="w-14 rounded-full">
+                            <img src="images/Icon.png" alt="">
+                        </div>
+                    <h2 class="card-title">
+                        Biden pledges nearly 3 billion dollar to ukraine
+                    </h2>
+                </div>       
+                <div class="card-footer justify-between mt-2 ml-10">
+                    <p>
+                        Awlad Hossain
+                    </p>
+                    <p>
+                        91K Views
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        let button = document.getElementById("navigateButton");
+        button.addEventListener("click", function() {
+            window.location.href = "blogpage.html";
+        });
+    </script>
 </body>
+
 </html>
